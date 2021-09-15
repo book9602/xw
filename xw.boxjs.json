@@ -2,24 +2,28 @@
     "id": "xw.app.sub",
     "name": "小望boxjs订阅",
     "author": "xw",
-    "icon": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/kongfu.jpg",
-    "repo": "https://github.com/shaolin-kongfu/js_scripts",
+    "icon": "https://github.com/book9602/xw/blob/main/head.jpg",
+    "repo": "https://github.com/book9602/xw",
     "apps": [
-      {
-      "id": "dianshijia",
-      "name": "xw电视家",
+
+    {
+      "id": "xwhbsp",
+      "name": "红包视频",
       "keys": [
-        "dsj_header",
-          "jc_cookie"
+        "xwhbspbody",
+          "xwhbsphd"
       ], 
-      "repo": "https://github.com/shaolin-kongfu/js_scripts/main/dsj.js",  
-      "script": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/dsj.js", 
+      "repo": "https://github.com/book9602/xw/main/xwhbsp.js",  
+      "script": "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.js", 
        
       "icons": [ 
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/dianshijia.png",
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/dianshijia.png"  
+        "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png",
+        "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"  
       ]
     },
+
+    
+
 
    ]
 }
