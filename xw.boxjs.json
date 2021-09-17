@@ -1,3 +1,4 @@
+
 {
     "id": "book9602.app.sub",
     "name": "小望boxjs订阅",
@@ -13,7 +14,7 @@
         "xwhbspbody",
           "xwhbsphd"
       ], 
-      "repo": "https://github.com/book9602/xw/main/xwhbsp.js",  
+      "repo": "https://github.com/book9602/xw/blob/main/xwhbsp.js",  
       "script": "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.js", 
        
       "icons": [ 
@@ -21,9 +22,5 @@
         "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"  
       ]
     },
-
-    
-
-
    ]
 }
