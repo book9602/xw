@@ -2,28 +2,16 @@
     "id": "book9602.app.sub",
     "name": "小望boxjs订阅",
     "author": "@book9602",
-    "icon": "https://github.com/book9602/xw/blob/main/head.jpg",
-    "repo": "https://github.com/book9602/xw/blob",
+    "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10086.png",
+    "repo": "https://github.com/book9602/xw",
     "apps": [
-
     {
       "id": "xwhbsp",
       "name": "红包视频",
-      "keys": [
-        "xwhbspbody",
-          "xwhbsphd"
-      ], 
-      "repo": "https://github.com/book9602/xw/blob/",  
+      "keys": ["xwhbspbody","xwhbsphd"], 
+      "repo": "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.js",  
       "script": "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.js", 
-       
-      "icons": [ 
-        "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png",
-        "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"  
-      ]
+      "icons": ["https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png","https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"]
     },
-
-    
-
-
    ]
 }
