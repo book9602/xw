@@ -25,7 +25,7 @@
       "id": "kuaishou",
       "name": "快手极速版",
       "author": "@sunert",
-      "keys": ["cookie_ks", "cookies_ks"],
+      "keys": ["cookie_ks", "cookies_ks","cookie_ks2", "cookies_ks2"],
       "descs_html": [
         "多账号ck脚本地址【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/NE.cookie.js\">Cookie采集器</a>】",
         "注：NE工具中直接执行脚本将移除重复的Cookie"
