@@ -22,30 +22,24 @@
       "icons": ["https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png","https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"]
     },
         {
-      "id": "kuaishou",
+       "id": "kuaishou",
       "name": "快手极速版",
-      "author": "@sunert",
-      "keys": ["cookie_ks", "cookies_ks","cookie_ks2", "cookies_ks2"],
-      "descs_html": [
-        "多账号ck脚本地址【<a href=\"https://raw.githubusercontent.com/ztxtop/x/main/NE.cookie.js\">Cookie采集器</a>】",
-        "注：NE工具中直接执行脚本将移除重复的Cookie"
-      ],
-      "settings": [{
-        "id": "cookie_ks",
-        "name": "账号1",
-        "val": "",
-        "type": "text",
-        "desc": "快手账号1 Cookie"
-      }, {
-        "id": "cookies_ks",
-        "name": "CK 列表",
-        "val": "",
-        "type": "textarea",
-        "autoGrow": true,
-        "rows": 8,
-        "desc": "快手扩展CK 列表 (JSON 格式)"
-      }],
-      "repo": "https://gitee.com/Sunert/Scripts/blob/master/Task/kuaishou.js",
+      "author": "@小望",
+      "keys": ["cookie_ks", "cookies_ks2","cookie_ks3", "cookie_ks4","cookies_ks5"],
+            "settings": [{
+		"id": "ksstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },{
+            "id": "kscount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    } ],
+ "repo": "https://gitee.com/Sunert/Scripts/blob/master/Task/kuaishou.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/kuaishou.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/kuaishou.png"],
       "script": "https://raw.githubusercontent.com/ztxtop/x/main/kuaishou.js"
     }
