@@ -34,7 +34,7 @@
        "id": "hbsq_qd",
       "name": "红包签到",
       "author": "@小望",
-      "keys": ["hbspqdbody", "hbspqdbody2","hbspqdbody3", "hbspqdbody4","hbspqdbody5","hbspqdbody6","hbspqdbody7", "hbspqdbody8","hbspqdbody9", "hbspqdbody10"],
+      "keys": ["hbspqdbody","hbsphd", "hbspqdbody2","hbspqdbody3", "hbspqdbody4","hbspqdbody5","hbspqdbody6","hbspqdbody7", "hbspqdbody8","hbspqdbody9", "hbspqdbody10"],
       "repo": "https://raw.githubusercontent.com/book9602/xw/main/hbsq_qd.js",
       "icons": ["https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png", "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"],
       "script": "https://raw.githubusercontent.com/book9602/xw/main/hbsq_qd.js"
