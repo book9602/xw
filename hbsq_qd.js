@@ -52,7 +52,7 @@ $.message = ''
         hbsphdArr.push($.getdata('hbsphd'))
         hbspqdbodyArr.push($.getdata('hbspqdbody'))
         let hbspcount = ($.getval('hbspcount') || '1');
-        for (let i = 2; i <= hbspcount; i++) {
+        for (let i = 2; i <= 10; i++) {
             hbspurlArr.push($.getdata(`hbspurl${i}`))
             hbsphdArr.push($.getdata(`hbsphd${i}`))
             hbspqdbodyArr.push($.getdata(`hbspqdbody${i}`))
@@ -64,9 +64,9 @@ $.message = ''
                 8 * 60 * 60 * 1000
             ).toLocaleString()} ===============================================\n`
         );
-        console.log(`=================== 共${hbsphdArr.length}个账号 ==================\n`)
-        for (let i = 0; i < hbsphdArr.length; i++) {
-            if (hbsphdArr[i]) {
+        console.log(`=================== 共${hbspqdbodyArr.length}个账号 ==================\n`)
+        for (let i = 0; i < hbspqdbodyArr.length; i++) {
+            if (hbspqdbodyArr[i]) {
 
                 hbspurl = hbspurlArr[i];
                 hbsphd = hbsphdArr[i];
