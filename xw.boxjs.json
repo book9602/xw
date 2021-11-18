@@ -29,7 +29,16 @@
       "repo": "https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js",
       "icons": ["https://raw.githubusercontent.com/book9602/xw/main/gd.png", "https://raw.githubusercontent.com/book9602/xw/main/gd.png"],
       "script": "https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js"
-    },
+    },       
+        {
+       "id": "hbspbx",
+      "name": "红包宝箱",
+      "author": "@小望",
+      "keys": ["hbspbxbody","hbsphd", "hbspbxbody2","hbspbxbody3", "hbspbxbody4","hbspbxbody5","hbspbxbody6","hbspbxbody7", "hbspbxbody8","hbspbxbody9", "hbspbxbody10"],
+      "repo": "https://raw.githubusercontent.com/book9602/xw/main/hbspbx.js",
+      "icons": ["https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png", "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"],
+      "script": "https://raw.githubusercontent.com/book9602/xw/main/hbspbx.js"
+    },  
         {
        "id": "hbsq_qd",
       "name": "红包签到",
