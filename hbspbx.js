@@ -64,35 +64,22 @@ $.message = ''
                 8 * 60 * 60 * 1000
             ).toLocaleString()} ===============================================\n`
         );
-        console.log(`=================== 共${5}个账号 ==================\n`)
-        for (let i = 0; i < 5; i++) {
-            if (hbsphdArr[i]) {
+     console.log(`=================== 共${hbspbxbodyArr.length}个账号 ==================\n`)
+        for (let i = 0; i < hbspbxbodyArr.length; i++) {
+            if (hbspbxbodyArr[i]) {
 
                 hbspurl = hbspurlArr[i];
                 hbsphd = hbsphdArr[i];
-                hbspbxbody = hbspbxbodyArr[i];
+                hbspqdbody = hbspbxbodyArr[i];
                 $.index = i + 1;
                 console.log(`\n【 红包视频 账号${$.index} 】`)
-                //await $.wait(1000)              
-                //await hbspqd()//签到
-                //await $.wait(1000)
+                //console.log(hbspbxbody)             
 
-                for (let x = 0; x < 5; x++) {
-                    $.index = x + 1
-                    console.log(`\n第${x + 1}次看视频！`)
-
-                    //await hbspksp() //看视频
-                    //await $.wait(18000)
-
-
-                }
-                
-                await hbspbx()//宝箱每小时一次,要测试
-                await $.wait(1000)
-               await hbspsy()//今天收益
-                await $.wait(1000)
-
-                
+                //await $.wait(DD)
+                await hbspbx()//宝箱
+                await $.wait(1000) 
+                await hbspsy()//收益
+                await $.wait(1000)                
             }
         }
     }
@@ -103,8 +90,8 @@ $.message = ''
 
 
 //获取CK
-function hbspck() {
-    if ($request.url.indexOf("getGold") > -1) {
+function hbspbxck() {
+    if ($request.url.indexOf("openBox") > -1) {
 
         const ycburl = $request.url
         if (ycburl) $.setdata(ycburl, `ycburl${status}`)
@@ -123,42 +110,6 @@ function hbspck() {
     }
 }
 
-
-//签到 https://hbapi.qudianyue.com/video?&t=${times}&m=task
-function hbspqd(timeout = 0) {
-    return new Promise((resolve) => {
-        let url = {
-            url: `https://hbapi.qudianyue.com/video?&t=${times}&m=task`,
-            headers: JSON.parse(hbsphd),
-            body: hbspbxbody,
-        }
-        $.post(url, async (err, resp, data) => {
-            try {
-                data = JSON.parse(data)
-                //console.log(url)
-                //console.log(data)
-
-                if (data.sign == 1) {
-                   
-                    console.log(`今天签到成功`)
-                    
-
-                } else {
-
-                    console.log(`今天还没有签到`)
-                   
-                }
-
-            } catch (e) {
-
-            } finally {
-                resolve()
-            }
-        }, timeout)
-    })
-}
-
-
 //开启宝箱 https://hbapi.qudianyue.com/video?&t=1636179313117&m=openBox
 function hbspbx(timeout = 0) {
     return new Promise((resolve) => {
@@ -170,8 +121,8 @@ function hbspbx(timeout = 0) {
         $.post(url, async (err, resp, data) => {
             try {
                 data = JSON.parse(data)
-                console.log(url)
-                console.log(data)
+                //console.log(url)
+                //console.log(data)
                 if (data.success == true) {
                    
                     console.log(`开启宝箱成功:同学获得金币`+data.result)
@@ -181,38 +132,6 @@ function hbspbx(timeout = 0) {
 
                     console.log(`开启宝箱失败`)
                    
-                }
-
-            } catch (e) {
-
-            } finally {
-                resolve()
-            }
-        }, timeout)
-    })
-}
-
-//看视频
-function hbspksp(timeout = 0) {
-    return new Promise((resolve) => {
-        let url = {
-            url: `https://hbapi.qudianyue.com/video?&t=${times}&m=getGold`,
-            headers: JSON.parse(hbsphd),
-            body: hbspbxbody,
-        }
-        $.post(url, async (err, resp, data) => {
-            try {
-                data = JSON.parse(data)
-
-                if (data.success == true) {
-
-                    console.log(`【看视频领金币】：${data.result}\n`)
-                    $.message += `【看视频领金币】：${data.result}\n`
-
-                } else {
-
-                    console.log(`【看视频领金币】：${data.failDesc}\n`)
-                    $.message += `【看视频领金币】：${data.failDesc}\n`
                 }
 
             } catch (e) {
@@ -237,9 +156,8 @@ function hbspsy(timeout = 0) {
                 xwdata = JSON.parse(data)
                 //console.log(url)
                 //console.log(xwdata)
-                if (xwdata.success == true) {
-                   
-                    console.log( xwdata.result.name + `同学你今天金币:` + xwdata.result.m_gold)                    
+                if (xwdata.success == true) {                   
+                    console.log( xwdata.result.name + `同学你今天金币:` + xwdata.result.m_gold)                 
                     console.log( xwdata.result.name + `同学你一共获得零钱:` + xwdata.result.m_balance+`元`)
                     console.log( xwdata.result.name + `同学30元可提现哦`)
 
