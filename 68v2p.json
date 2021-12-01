@@ -1,9 +1,126 @@
 {
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
-  "note": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-11-25 18:12:34",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-12-01 11:58:03",
   "list": [
+    {
+      "name": "金银手指",
+      "type": "cron",
+      "time": "0 */10 16-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jsz.js"
+      }
+    },
+    {
+      "name": "晶彩看看赚",
+      "type": "cron",
+      "time": "0 */30 1-2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jckkz.js"
+      }
+    },
+    {
+      "name": "晶彩签到&宝箱",
+      "type": "cron",
+      "time": "15 1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jcqd.js"
+      }
+    },
+    {
+      "name": "晶彩提现lo8520",
+      "type": "cron",
+      "time": "15 20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jc_withdraw.js"
+      }
+    },
+    {
+      "name": "晶彩福利视频",
+      "type": "cron",
+      "time": "10 4 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jc_Adv_video.js"
+      }
+    },
+    {
+      "name": "晶彩自动阅读",
+      "type": "cron",
+      "time": "*/30 1-3 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jcwz.js"
+      }
+    },
+    {
+      "name": "晶彩火爆转发",
+      "type": "cron",
+      "time": "10 6,12,18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jc_share.js"
+      }
+    },
+    {
+      "name": "安卓红包lo8520",
+      "type": "cron",
+      "time": "*/15 6-13 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "hbsp.js"
+      }
+    },
+    {
+      "name": "电视家2",
+      "type": "cron",
+      "time": "*/15 5-10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "dianshijia.js"
+      }
+    },
+    {
+      "name": "快手签到x_w962",
+      "type": "cron",
+      "time": "13 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "kuaishou.js"
+      }
+    },
+    {
+      "name": "倾书微传",
+      "type": "cron",
+      "time": "09 21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "qswc.js"
+      }
+    },
+    {
+      "name": "晶彩抽奖",
+      "type": "cron",
+      "time": "10 5 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jc_Rotary.js"
+      }
+    },
+    {
+      "name": "晶彩盒子",
+      "type": "cron",
+      "time": "33 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jcbox.js"
+      }
+    },
     {
       "name": "中青看点打卡赚钱",
       "type": "cron",
@@ -16,16 +133,25 @@
     {
       "name": "中青看点搜索赚",
       "type": "cron",
-      "time": "0 30 1 * * *",
+      "time": "30 2 * * *",
       "job": {
         "type": "runjs",
         "target": "zqssz.js"
       }
     },
     {
+      "name": "中青签到xw969",
+      "type": "cron",
+      "time": "15 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zqqd.js"
+      }
+    },
+    {
       "name": "中青看点浏览赚",
       "type": "cron",
-      "time": "0 50 2 * * *",
+      "time": "30 3 * * *",
       "job": {
         "type": "runjs",
         "target": "zqllz.js"
@@ -34,7 +160,7 @@
     {
       "name": "中青看文章双陪",
       "type": "cron",
-      "time": "25 1 * * 1",
+      "time": "15 1 * * 1",
       "job": {
         "type": "runjs",
         "target": "zq_double.js"
@@ -43,7 +169,7 @@
     {
       "name": "中青自动阅读",
       "type": "cron",
-      "time": "10 8-23/2 * * *",
+      "time": "*/30 7-10 * * *",
       "job": {
         "type": "runjs",
         "target": "zqwz.js"
@@ -52,25 +178,34 @@
     {
       "name": "中青看看赚",
       "type": "cron",
-      "time": "40 6,18 * * *",
+      "time": "40 3 * * *",
       "job": {
         "type": "runjs",
         "target": "zqkkz.js"
       }
     },
     {
-      "name": "中青提现x_w963",
+      "name": "中青提现x_w960",
       "type": "cron",
-      "time": "20 10 0 * * *",
+      "time": "20 11 * * *",
       "job": {
         "type": "runjs",
         "target": "zq_withdraw.js"
       }
     },
     {
+      "name": "中青福利视频",
+      "type": "cron",
+      "time": "40 1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_Adv_video.js"
+      }
+    },
+    {
       "name": "中青转发",
       "type": "cron",
-      "time": "48 9,12,18 * * *",
+      "time": "55 8,12,18 * * *",
       "job": {
         "type": "runjs",
         "target": "zq_share.js"
@@ -79,7 +214,7 @@
     {
       "name": "中青盒子",
       "type": "cron",
-      "time": "*/30 8-23 * * *",
+      "time": "20 22 * * *",
       "job": {
         "type": "runjs",
         "target": "zqbox.js"
@@ -88,100 +223,19 @@
     {
       "name": "中青抽奖",
       "type": "cron",
-      "time": "0 18 2 * * *",
+      "time": "10 2 * * *",
       "job": {
         "type": "runjs",
         "target": "zq_Rotary.js"
       }
     },
     {
-      "name": "中青每日收益",
+      "name": "中青收益x_w960",
       "type": "cron",
-      "time": "55 23 * * *",
+      "time": "25 22 * * *",
       "job": {
         "type": "runjs",
         "target": "zq_today_score.js"
-      }
-    },
-    {
-      "name": "晶彩看看赚",
-      "type": "cron",
-      "time": "*/30 2-3 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jckkz.js"
-      }
-    },
-    {
-      "name": "晶彩签到&宝箱",
-      "type": "cron",
-      "time": "30 1 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jcqd.js"
-      }
-    },
-    {
-      "name": "晶彩提现x_w963",
-      "type": "cron",
-      "time": "15 4 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jc_withdraw.js"
-      }
-    },
-    {
-      "name": "晶彩看视频文章",
-      "type": "cron",
-      "time": "*/30 12-16 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jcwz.js"
-      }
-    },
-    {
-      "name": "晶彩福利视频",
-      "type": "cron",
-      "time": "10 2 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jc_Adv_video.js"
-      }
-    },
-    {
-      "name": "晶彩火爆转发",
-      "type": "cron",
-      "time": "20 6,12,18 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jc_share.js"
-      }
-    },
-    {
-      "name": "晶彩盒子",
-      "type": "cron",
-      "time": "*/30 8-23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jcbox.js"
-      }
-    },
-    {
-      "name": "晶彩抽奖",
-      "type": "cron",
-      "time": "20 18 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "jc_Rotary.js"
-      }
-    },
-    {
-      "name": "中青签到x_w963",
-      "type": "cron",
-      "time": "20 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "zqqd.js"
       }
     },
     {
@@ -194,39 +248,39 @@
       }
     },
     {
-      "name": "多看点963",
+      "name": "安卓红包提现8520",
       "type": "cron",
-      "time": "9 */2 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "AngelEver_Water_dkd.js"
-      }
-    },
-    {
-      "name": "安卓红包963",
-      "type": "cron",
-      "time": "*/15 13-23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "hbsp.js"
-      }
-    },
-    {
-      "name": "安卓红包提现963",
-      "type": "cron",
-      "time": "20 22 * * *",
+      "time": "20 20 * * *",
       "job": {
         "type": "runjs",
         "target": "hbsq_withdraw.js"
       }
     },
     {
-      "name": "安卓红包签到963",
+      "name": "安卓红包签到8520",
       "type": "cron",
-      "time": "15 3 * * *",
+      "time": "15 2 * * *",
       "job": {
         "type": "runjs",
         "target": "hbsq_qd.js"
+      }
+    },
+    {
+      "name": "中青5分钟和60分",
+      "type": "cron",
+      "time": "25 20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_5_60.js"
+      }
+    },
+    {
+      "name": "中青听歌",
+      "type": "cron",
+      "time": "19 10-18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "zq_music.js"
       }
     }
   ]
